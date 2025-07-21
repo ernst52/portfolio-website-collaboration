@@ -172,6 +172,11 @@ body {
     color: var(--text-color-bold); /* For dark/light theme to works */
 }
 
+section {
+    scroll-margin-top: 70px;
+}
+
+
 /* About Section */
 .about {
     padding: 100px 0;
