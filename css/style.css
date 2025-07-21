@@ -50,6 +50,7 @@ body {
     display: flex;
     list-style: none;
     gap: 2rem;
+    margin-left: auto;
 }
 
 .nav-link {
@@ -67,6 +68,12 @@ body {
     display: none;
     flex-direction: column;
     cursor: pointer;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; /* tweak this */
 }
 
 .bar {

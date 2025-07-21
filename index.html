@@ -22,23 +22,29 @@
         <p>Loading...</p>
       </div>
     </div>
+
     <!-- Navigation -->
     <nav class="navbar">
       <div class="nav-container">
         <div class="nav-logo">
           <a href="#home">ポートフォリオ</a>
         </div>
-        <ul class="nav-menu">
-          <li><a href="#home" class="nav-link">ホーム</a></li>
-          <li><a href="#about" class="nav-link">紹介</a></li>
-          <li><a href="#skills" class="nav-link">スキル</a></li>
-          <li><a href="#projects" class="nav-link">プロジェクト</a></li>
-          <li><a href="#contact" class="nav-link">連絡先</a></li>
-        </ul>
-        <!-- Dark Mode Theme -->
-        <div class="theme-toggle">
-          <i class="fas fa-moon" id="theme-icon"></i>
+
+        <div class="nav-right">
+          <ul class="nav-menu">
+            <li><a href="#home" class="nav-link">ホーム</a></li>
+            <li><a href="#about" class="nav-link">紹介</a></li>
+            <li><a href="#skills" class="nav-link">スキル</a></li>
+            <li><a href="#projects" class="nav-link">プロジェクト</a></li>
+            <li><a href="#contact" class="nav-link">連絡先</a></li>
+          </ul>
+
+          <!-- Dark Mode Theme -->
+          <div class="theme-toggle">
+            <i class="fas fa-moon" id="theme-icon"></i>
+          </div>
         </div>
+
         <div class="nav-toggle">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -46,6 +52,7 @@
         </div>
       </div>
     </nav>
+
     <!-- Scroll Progress Indicator -->
     <div class="scroll-progress">
       <div class="progress-bar"></div>
@@ -53,22 +60,22 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>はーい、 <span class="highlight">ユリです。</span></h1>
-            <!-- Update2 -->
-            <p class="hero-subtitle">
-                <span id="typing-text"></span>
-                <span class="cursor">|</span>
-            </p>
-            <p class="hero-description">小さいな女の子大好きです。</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">私の作品を見る</a>
-                <a href="#contact" class="btn btn-secondary">連絡する</a>
-            </div>
+      <div class="hero-content">
+        <h1>はーい、 <span class="highlight">ユリです。</span></h1>
+        <!-- Update2 -->
+        <p class="hero-subtitle">
+          <span id="typing-text"></span>
+          <span class="cursor">|</span>
+        </p>
+        <p class="hero-description">小さいな女の子大好きです。</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">私の作品を見る</a>
+          <a href="#contact" class="btn btn-secondary">連絡する</a>
         </div>
-        <div class="hero-image">
-            <img src="images/yuuu.jpg" alt="Profile Picture">
-        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/yuuu.jpg" alt="Profile Picture" />
+      </div>
     </section>
 
     <!-- About Section -->
@@ -141,16 +148,16 @@
       </div>
     </section>
 
-    <!-- Projects Section --> 
+    <!-- Projects Section -->
     <section id="projects" class="projects">
       <div class="container">
         <h2 class="section-title">私たちのプロジェクト</h2>
         <!-- Filter Buttons -->
         <div class="filter-buttons">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="web">Web Apps</button>
-            <button class="filter-btn" data-filter="mobile">Mobile</button>
-            <button class="filter-btn" data-filter="ui">UI/UX</button>
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web Apps</button>
+          <button class="filter-btn" data-filter="mobile">Mobile</button>
+          <button class="filter-btn" data-filter="ui">UI/UX</button>
         </div>
         <div class="projects-grid">
           <div class="project-card" data-category="web">
@@ -201,9 +208,7 @@
         <div class="contact-content">
           <div class="contact-info">
             <h3>一緒に働こう</h3>
-            <p>
-              新しいプロジェクトやチャンスの話、いつでも大歓迎だよ。
-            </p>
+            <p>新しいプロジェクトやチャンスの話、いつでも大歓迎だよ。</p>
             <div class="contact-details">
               <div class="contact-item">
                 <i class="fas fa-envelope"></i>
@@ -251,7 +256,7 @@
     </section>
     <!-- Update 3 back to top button-->
     <button class="back-to-top" id="backToTop">
-        <i class="fas fa-arrow-up"></i>
+      <i class="fas fa-arrow-up"></i>
     </button>
 
     <!-- Footer -->
@@ -261,6 +266,5 @@
       </div>
     </footer>
     <script src="js/scripts.js"></script>
-</body>
+  </body>
 </html>
-
