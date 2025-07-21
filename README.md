@@ -24,7 +24,7 @@ $ git init
 $ git clone https://github.com/ernst52/portfolio-website-collaboration.git
 $ code . # opens VS Code
 ```
-Once it's open, make sure you have the [Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) installed in VS Code. If not install it.<br>
+Once it's open, make sure you have the [Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) installed in VS Code. If not, install it.<br>
 If everything went accordingly, you should be able to see the webpage by pressing "Go Live" button.<br>
 <img width="275" height="19" alt="image" src="https://github.com/user-attachments/assets/03318167-9d4c-48eb-8e3d-f323d824deeb" />
 > [!TIP]
