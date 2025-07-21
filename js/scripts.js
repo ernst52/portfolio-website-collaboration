@@ -124,7 +124,7 @@ filterButtons.forEach(button => {
 
 // Update 2 Typing Animation
 const typingText = document.getElementById('typing-text');
-const textArray = ['強姦犯', '失業者', 'ロリコン', '性犯罪者'];
+const textArray = ['強姦犯', '失業者', 'ロリコン', '性犯罪者','変態'];
 let textIndex = 0;
 let charIndex = 0;
 let isDeleting = false;

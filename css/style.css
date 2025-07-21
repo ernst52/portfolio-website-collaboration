@@ -291,7 +291,7 @@ body {
 }
 
 .project-info p {
-    color: var(--text-color-muted); /* For dark/light theme to works */
+    color: var(--text-color-muted); /* For dark/light theme to works lol */
     margin-bottom: 1.5rem;
 }
 
