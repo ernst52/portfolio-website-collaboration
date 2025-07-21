@@ -54,7 +54,8 @@ Open index.html in your browser to see it live locally.
 * Back to Top Button
 
 ## Features Preview
-
+> [!NOTE]
+> ⚠️ These previews are from an older version of the webpage. The live demo might have changed a bit.
 ### Dark/Light theme
 ![DL2](https://github.com/user-attachments/assets/27196361-aa68-42ca-aea6-815480d6c803)
 
@@ -76,6 +77,6 @@ Open index.html in your browser to see it live locally.
 ## Live Demo
 👉 [Check it out here.](https://yuri221.netlify.app/)
 > [!NOTE]
-> ⚠️ The navigation menu has been updated recently and might look different from the previews above.
+> ⚠️ Again, the navigation menu has been updated recently and might look different from the previews above.
 
 
