@@ -98,3 +98,81 @@ window.addEventListener('scroll', () => {
     
     document.querySelector('.progress-bar').style.width = scrollPercent + '%';
 });
+
+// Update 1 Project Filter System
+const filterButtons = document.querySelectorAll('.filter-btn');
+const projectCards = document.querySelectorAll('.project-card');
+
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        // Remove active class from all buttons
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        // Add active class to clicked button
+        button.classList.add('active');
+        
+        const filterValue = button.getAttribute('data-filter');
+        
+        projectCards.forEach(card => {
+            if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                card.classList.remove('hide');
+            } else {
+                card.classList.add('hide');
+            }
+        });
+    });
+});
+
+// Update 2 Typing Animation
+const typingText = document.getElementById('typing-text');
+const textArray = ['強姦犯', '失業者', 'ロリコン', '性犯罪者'];
+let textIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function typeWriter() {
+    const currentText = textArray[textIndex];
+    
+    if (!isDeleting) {
+        typingText.textContent = currentText.substring(0, charIndex + 1);
+        charIndex++;
+        
+        if (charIndex === currentText.length) {
+            isDeleting = true;
+            setTimeout(typeWriter, 2000);
+            return;
+        }
+    } else {
+        typingText.textContent = currentText.substring(0, charIndex - 1);
+        charIndex--;
+        
+        if (charIndex === 0) {
+            isDeleting = false;
+            textIndex = (textIndex + 1) % textArray.length;
+        }
+    }
+    
+    setTimeout(typeWriter, isDeleting ? 50 : 150);
+}
+
+// Start typing animation
+document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(typeWriter, 1000);
+});
+
+// Update 3 Back to Top Button
+const backToTopButton = document.getElementById('backToTop');
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+        backToTopButton.classList.add('show');
+    } else {
+        backToTopButton.classList.remove('show');
+    }
+});
+
+backToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
