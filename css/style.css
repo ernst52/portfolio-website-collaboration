@@ -23,7 +23,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.95);
+    background: var(--navbar-bg);   /* For dark/light theme to works */
     backdrop-filter: blur(10px);
     z-index: 1000;
     padding: 1rem 0;
@@ -42,7 +42,7 @@ body {
 .nav-logo a {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #2c3e50;
+    color: var(--text-color-bold); /* For dark/light theme to works */
     text-decoration: none;
 }
 
@@ -53,7 +53,7 @@ body {
 }
 
 .nav-link {
-    color: #333;
+    color: var(--text-color-muted); /* For dark/light theme to works */
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
@@ -79,12 +79,13 @@ body {
 
 /* Hero Section */
 .hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    padding: 100px 20px 50px;
-    background: linear-gradient(135deg, #9b843f 0%, #332416 100%);
-    color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 100px 20px 50px;
+  background: var(--hero-bg);
+  color: var(--hero-text-color);
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .hero-content {
@@ -98,7 +99,8 @@ body {
 }
 
 .highlight {
-    color: #f39c12;
+    color: var(--yuri);
+    transition: color 0.3s ease;
 }
 
 .hero-subtitle {
@@ -141,13 +143,12 @@ body {
 
 .btn-secondary {
     background: transparent;
-    color: white;
-    border: 2px solid white;
+    color: var(--text-color-bold);
+    border: 2px solid var(--border-color);
 }
 
 .btn-secondary:hover {
-    background: white;
-    color: #333;
+    transform: translateY(-2px);
 }
 
 .hero-image {
@@ -168,7 +169,7 @@ body {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 3rem;
-    color: #2c3e50;
+    color: var(--text-color-bold); /* For dark/light theme to works */
 }
 
 /* About Section */
@@ -187,7 +188,7 @@ body {
 .about-text p {
     font-size: 1.1rem;
     margin-bottom: 2rem;
-    color: #666;
+    color: var(--text-color-muted); /* For dark/light theme to works */
 }
 
 .about-stats {
@@ -223,7 +224,7 @@ body {
 }
 
 .skill-item {
-    background: white;
+    background: var(--skill-item);
     padding: 2rem;
     border-radius: 10px;
     text-align: center;
@@ -243,7 +244,11 @@ body {
 
 .skill-item h3 {
     margin-bottom: 1rem;
-    color: #2c3e50;
+    color: var(--text-color-bold); /* For dark/light theme to works */
+}
+
+.skill-item p {
+  color: var(--text-color-muted); /* For dark/light theme to works */
 }
 
 /* Projects Section */
@@ -282,11 +287,11 @@ body {
 
 .project-info h3 {
     margin-bottom: 1rem;
-    color: #2c3e50;
+    color: var(--text-color-bold); /* For dark/light theme to works */
 }
 
 .project-info p {
-    color: #666;
+    color: var(--text-color-muted); /* For dark/light theme to works */
     margin-bottom: 1.5rem;
 }
 
@@ -298,6 +303,15 @@ body {
 .btn-small {
     padding: 8px 20px;
     font-size: 0.9rem;
+    color: #3498db;;
+}
+
+.btn-small:hover {
+  color: #1f54a8;;
+}
+
+.btn.btn-small.btn-secondary {
+  color: var(--btn-color);
 }
 
 /* Contact Section */
@@ -314,11 +328,11 @@ body {
 .contact-info h3 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
-    color: #2c3e50;
+    color: var(--text-color-bold); /* For dark/light theme to works */
 }
 
 .contact-info p {
-    color: #666;
+    color: var(--text-color-muted); /* For dark/light theme to works */
     margin-bottom: 2rem;
 }
 
@@ -338,6 +352,11 @@ body {
     margin-right: 1rem;
     width: 20px;
 }
+
+.contact-item span {
+  color: var(--text-color-muted); /* For dark/light theme to works */
+}
+
 
 .social-links {
     display: flex;
@@ -492,4 +511,132 @@ body {
     .project-links {
         flex-direction: column;
     }
+}
+
+/* Dark Mode Styles */
+[data-theme="dark"] {
+    --bg-color: #1a1a1a;
+    --card-bg: #333;
+    --text-color-muted: #bbb;  /* additional variable */
+    --text-color-bold: rgb(251, 251, 251);   /* additional variable */
+    --section-bg: #262626;
+    --border-color: rgb(251, 251, 251); /* additional variable */
+    --navbar-bg: rgba(26, 26, 26, 0.95); /* additional variable */
+    --hero-bg: linear-gradient(135deg,  #3f4964 0%, #05141a 100%); /* additional variable */
+    --hero-text-color: white; /* additional variable */
+    --btn-color: rgb(251, 251, 251); /* additional variable */
+    --yuri: #f39c12; /* additional variable */
+    --skill-item: #333; /* additional variable */
+}
+
+[data-theme="light"] {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --card-bg: #ffffff;
+    --section-bg: #f8f9fa;
+    --border-color: #333333; /* additional variable */
+    --navbar-bg: rgba(255, 255, 255, 0.95); /* additional variable */
+    --hero-bg: linear-gradient(135deg, #f6f5f2 0%, #b7ab59 100%); /* additional variable */
+    --hero-text-color: #333; /* additional variable */
+    --btn-color: #333(251, 251, 251); /* additional variable */
+    --yuri: #b38dbb; /* additional variable */
+    --skill-item: #ffffff;
+}
+
+[data-theme="dark"] #theme-icon.fas.fa-sun {
+  color: rgb(251, 251, 251);
+  transition: color 0.3s ease;
+  /* additional variable */
+}
+
+[data-theme="dark"] #theme-icon.fas.fa-sun:hover {
+  color: #3498db;
+  /* additional variable */
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.theme-toggle {
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.theme-toggle:hover {
+    color: #3498db;
+}
+
+/* Update other elements to use CSS variables */
+.skill-item, .project-card, .contact-form {
+    background: var(--card-bg);
+}
+
+.about, .projects {
+    background: var(--section-bg);
+}
+
+.about, .projects, .skill-item, .project-card, .contact-form {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Loading Animation */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+.loader-content {
+    text-align: center;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loader.fade-out {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Scroll Progress Indicator */
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.2);
+    z-index: 1001;
+}
+
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #3498db, #f39c12);
+    width: 0%;
+    transition: width 0.1s ease;
 }
