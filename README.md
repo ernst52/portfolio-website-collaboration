@@ -28,7 +28,7 @@ Once it's open, make sure you have the [Live Server extension](https://marketpla
 If everything went accordingly, you should be able to see the webpage by pressing "Go Live" button.<br>
 <img width="275" height="19" alt="image" src="https://github.com/user-attachments/assets/03318167-9d4c-48eb-8e3d-f323d824deeb" />
 > [!TIP]
-> The button can be found at the bottom-right corner of the VS Code window..
+> The button can be found at the bottom-right corner of the VS Code window.
 
 #### 2. Manaul zip file download
 Just put all the files (index.html, css/style.css, js/script.js) in a folder.
@@ -75,5 +75,7 @@ Open index.html in your browser to see it live locally.
 
 ## Live Demo
 👉 [Check it out here.](https://yuri221.netlify.app/)
+> [!NOTE]
+> ⚠️ The navigation menu has been updated recently and might look different from the previews above.
 
 
