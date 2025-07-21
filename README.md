@@ -56,7 +56,7 @@ Open index.html in your browser to see it live locally.
 ## Features Preview
 
 ### Dark/Light theme
-![DL](https://github.com/user-attachments/assets/27544581-91b6-49d7-b154-d62ebbb75bed)
+![DL2](https://github.com/user-attachments/assets/27196361-aa68-42ca-aea6-815480d6c803)
 
 ### Animated loading screen
 ![load](https://github.com/user-attachments/assets/e6efa9bd-3386-4694-b855-0c754dbf9928)
