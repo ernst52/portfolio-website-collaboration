@@ -61,7 +61,7 @@ contactForm.addEventListener('submit', (e) => {
 
 // Dark Mode Toggle
 const themeToggle = document.getElementById('theme-icon');
-const currentTheme = localStorage.getItem('theme') || 'light';
+const currentTheme = localStorage.getItem('theme') || 'dark';
 
 document.documentElement.setAttribute('data-theme', currentTheme);
 updateThemeIcon(currentTheme);
