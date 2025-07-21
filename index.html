@@ -53,18 +53,23 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-      <div class="hero-content">
-        <h1>はーい、 <span class="highlight">ユリです。</span></h1>
-        <p class="hero-subtitle">失業者</p>
-        <p class="hero-description">小さいな女の子大好きです。</p>
-        <div class="hero-buttons">
-          <a href="#projects" class="btn btn-primary">View My Work</a>
-          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        <div class="hero-content">
+            <h1>はーい、 <span class="highlight">ユリです。</span></h1>
+            <!-- Update2 -->
+            <p class="hero-subtitle">
+                <span id="typing-text"></span>
+                <span class="cursor">|</span>
+            </p>
+            <p class="hero-subtitle">失業者</p>
+            <p class="hero-description">小さいな女の子大好きです。</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
         </div>
-      </div>
-      <div class="hero-image">
-        <img src="images/yuuu.jpg" alt="Profile Picture" />
-      </div>
+        <div class="hero-image">
+            <img src="images/yuuu.jpg" alt="Profile Picture">
+        </div>
     </section>
 
     <!-- About Section -->
@@ -137,12 +142,19 @@
       </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects Section --> 
     <section id="projects" class="projects">
       <div class="container">
         <h2 class="section-title">Our Projects</h2>
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web Apps</button>
+            <button class="filter-btn" data-filter="mobile">Mobile</button>
+            <button class="filter-btn" data-filter="ui">UI/UX</button>
+        </div>
         <div class="projects-grid">
-          <div class="project-card">
+          <div class="project-card" data-category="web">
             <img src="images/guyastare.png" alt="Project 1" />
             <div class="project-info">
               <h3>Guya Stare</h3>
@@ -153,7 +165,7 @@
               </div>
             </div>
           </div>
-          <div class="project-card">
+          <div class="project-card" data-category="mobile">
             <img src="images/22.png" alt="Project 2" />
             <div class="project-info">
               <h3>Smart Nigger Racer</h3>
@@ -164,7 +176,7 @@
               </div>
             </div>
           </div>
-          <div class="project-card">
+          <div class="project-card" data-category="ui">
             <img src="images/download.png" alt="Project 3" />
             <div class="project-info">
               <h3>Nigga Generator</h3>
@@ -183,7 +195,6 @@
         </div>
       </div>
     </section>
-
     <!-- Contact Section -->
     <section id="contact" class="contact">
       <div class="container">
@@ -240,6 +251,10 @@
         </div>
       </div>
     </section>
+    <!-- Update 3 back to top button-->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <!-- Footer -->
     <footer class="footer">
@@ -247,7 +262,12 @@
         <p>&copy; 2025 Yuri. Yuuuuu, ユウウウ. All rights reserved.</p>
       </div>
     </footer>
-
     <script src="js/scripts.js"></script>
+<<<<<<< HEAD
   </body>
 </html>
+=======
+</body>
+</html>
+
+>>>>>>> 9f849ed (feature)
